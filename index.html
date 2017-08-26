@@ -1,1 +1,93 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Dennis Sosa</title>
+    <meta name="keywords" content="Dennis Sosa">
+    <meta name="author" content="Dennis Sosa">
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icons/designer.png">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+    <style>
+      #center-pane{
+        border-radius: 25px;
+        font-family: "Verdana", sans-serif, serif;
+        background-color: #E6E9EA; 
+        background-size: 100%;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      img:hover, a:hover{
+        opacity: 0.5;
+      }
+
+      footer{
+        background-color:#3D3D42;
+        color:#FFFFFF;
+        font-family: "Verdana", sans-serif, serif;
+        width: 100%;
+        margin: 0;
+        bottom: 0;
+        position:fixed;
+      }
+
+      li, a{
+        padding: 5px;
+      }
+
+    </style>
+
+    <script>
+      function askForResume(){
+          window.alert("Please email Dennis to ask for a copy of his Resume using the 'Contact' tab to the right of the tab just clicked.\n\nAlso, please feel free to visit Dennis' LinkedIn Profile using the LinkedIn icon at the footer of the page.\n\nThank you.")
+      }
+    </script>
+  </head>
+  <body>
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" style="background-color:#3D3D42;padding:17px;">
+      <a class="pure-menu-heading" href="" style="color:white;">DGS</a>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected"><a href="https://dsosa17.github.io/" class="pure-menu-link" style="color:white;">Home</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="javascript:void(0)" onclick="askForResume();" class="pure-menu-link" style="color:white;">Resume</a></li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+          <a href="#" class="pure-menu-link" style="color:white;">Contact</a>
+          <ul class="pure-menu-children">
+              <li class="pure-menu-item"><a href="mailto:dennis.sosa@gatech.edu" class="pure-menu-link" style="background-color:#3D3D42; color:white;">Georgia Tech Email</a></li>
+              <li class="pure-menu-item"><a href="mailto:dsosa1795@gmail.com" class="pure-menu-link" style="background-color:#3D3D42; color:white;">Gmail</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <br><br><br><br>
+
+    <div id="center-pane">
+      <p style="float:left;padding:10px;"><img src="Icons/Sosa-Dennis.png" alt="dennis" height="157" width="157"></p>
+      <h1 style="text-align:center;">Dennis Sosa</h1>
+      <p style="text-align:center;"><i>"The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life." - Bill Gates</i></p>
+      <br><br>
+    </div>
+
+    <div id="center-pane">
+      <h1>About Me</h1>
+      <p>Hi, my name is Dennis German Sosa (DGS). Welcome to my website. I am a first-year graduate student at Georgia Institute of Technology pursuing a Master of Science in Computer Science. Throughout my student career, I have developed a high interest in software engineering, artificial intelligence, machine learning, and infrastructure. I plan to complete a research project within one of these areas. On my free time, I like to watch and play soccer. <br><br>As I proceed with my student career, I hope to develop professionally and technologically to take my skills to the software engineering industry. I value the importance of teamwork. As I look forward to my future career, I hope to join a team where software engineers can work together to solve problems that will impact many lives. <br><br>Please feel free to contact me if you have any questions. <br>The website is currently under construction for additional content. <br><br>Thank you for visiting my website.</p>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <footer>
+      <div align="center">
+        Connect with Dennis<br><br>
+        <a href="https://www.linkedin.com/in/dennissosa17"><img src="Icons/linkedin-logo.png" alt="linkedin-icon" height="32" width="42"></a>
+        <a href="https://www.github.com/dsosa17"><img src="Icons/github-logo.png" alt="github-icon" height="32" width="32"></a>
+        <p style="font-size: 10px;">Website created by Dennis Sosa</p><br>
+      </div>
+    </footer>
+
+  </body>
+</html>
