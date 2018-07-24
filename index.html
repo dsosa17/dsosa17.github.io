@@ -6,17 +6,21 @@
     <meta name="author" content="Dennis Sosa">
     <meta charset="UTF-8">
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:url" content="https://dsosa17.github.io">
     <meta property="og:title" content="Dennis Sosa">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Computer science student at Georgia Tech. Artificial Intelligence and Machine Learning Enthusiast.">
-    <meta property="og:image" content="https://dsosa17.github.io/Icons/Sosa-Dennis.png">
-    <link rel="shortcut icon" href="Icons/designer.png">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-
+    <meta property="og:description" content="Computer Science student at Georgia Tech. Artificial Intelligence and Machine Learning Enthusiast.">
+    <meta property="og:image" content="https://dsosa17.github.io/Icons/Sosa-Dennis.jpg">
+    <link rel="icon" href="Icons/designer.png">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
     <style>
       #center-pane{
         border-radius: 25px;
@@ -27,10 +31,6 @@
         margin: 10px;
       }
 
-      img:hover, a:hover{
-        opacity: 0.5;
-      }
-
       footer{
         background-color:#3D3D42;
         color:#FFFFFF;
@@ -38,12 +38,17 @@
         width: 100%;
         margin: 0;
         bottom: 0;
-        position:fixed;
       }
 
-      li, a{
-        padding: 5px;
+      a {
+        color: white;
       }
+
+      a:hover {
+        color: white;
+        opacity: 0.6;
+      }
+
 
     </style>
 
@@ -67,10 +72,11 @@
     			"https://www.stonybrook.edu/commcms/ureca/feature/_bio/2015/December2015",
     			"https://www.facebook.com/stonybrooku/posts/meet-dennis-sosa-'17-our/10153715495258232/",
     			"http://www.gemfellowship.org/students/2017-gem-fellows/",
-    			"http://www.news12varsity.com/long-island/uniondale/uniondale-solomon-s-warriors-1.1394987"
+    			"http://www.news12varsity.com/long-island/uniondale/uniondale-solomon-s-warriors-1.1394987",
+    			https://www.kaggle.com/dsosa17/
     		],
     		"gender": "male",
-    		"image": "https://dsosa17.github.io/Icons/Sosa-Dennis.png"
+    		"image": "https://dsosa17.github.io/Icons/Sosa-Dennis.jpg"
     	}
     </script>
     <script type="application/ld+json">
@@ -79,7 +85,7 @@
     		"@type": "WebSite",
     		"url": "https://dsosa17.github.io",
     		"name": "Dennis Sosa",
-    		"image": "https://dsosa17.github.io/Icons/Sosa-Dennis.png",
+    		"image": "https://dsosa17.github.io/Icons/Sosa-Dennis.jpg",
     		"author": {
     			"@type": "Person",
     			"name": "Dennis Sosa"
@@ -88,45 +94,59 @@
     </script>
   </head>
   <body>
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" style="background-color:#3D3D42;padding:17px;">
-      <a class="pure-menu-heading" href="" style="color:white;">DGS</a>
-      <ul class="pure-menu-list">
-        <li class="pure-menu-item pure-menu-selected"><a href="https://dsosa17.github.io/" class="pure-menu-link" style="color:white;">Home</a></li>
-        <li class="pure-menu-item pure-menu-selected"><a href="javascript:void(0)" onclick="askForResume();" class="pure-menu-link" style="color:white;">Resume</a></li>
-        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-          <a href="#" class="pure-menu-link" style="color:white;">Contact</a>
-          <ul class="pure-menu-children">
-              <li class="pure-menu-item"><a href="mailto:dennis.sosa@gatech.edu" class="pure-menu-link" style="background-color:#3D3D42; color:white;">Georgia Tech Email</a></li>
-              <li class="pure-menu-item"><a href="mailto:dsosa1795@gmail.com" class="pure-menu-link" style="background-color:#3D3D42; color:white;">Gmail</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <br><br><br><br>
-
-    <div id="center-pane">
-      <p style="float:left;padding:10px;"><img src="Icons/Sosa-Dennis.png" alt="dennis" height="157" width="157"></p>
-      <h1 style="text-align:center;">Dennis Sosa</h1>
-      <p style="text-align:center;"><i>"The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life." - Bill Gates</i></p>
-      <br><br>
-    </div>
-
-    <div id="center-pane">
-      <h1>About Me</h1>
-      <p>Hi, my name is Dennis German Sosa (DGS). Welcome to my website. I am a first-year graduate student at Georgia Institute of Technology pursuing a Master of Science in Computer Science. Throughout my student career, I have developed a high interest in software engineering, artificial intelligence, machine learning, and infrastructure. I plan to complete a research project within one of these areas. On my free time, I like to watch and play soccer. <br><br>As I proceed with my student career, I hope to develop professionally and technologically to take my skills to the software engineering industry. I value the importance of teamwork. As I look forward to my future career, I hope to join a team where software engineers can work together to solve problems that will impact many lives. <br><br>Please feel free to contact me if you have any questions. <br>The website is currently under construction for additional content. <br><br>Thank you for visiting my website.</p>
-    </div>
-
-    <br><br><br><br><br><br><br>
-
-    <footer>
-      <div align="center">
-        Connect with Dennis<br><br>
-        <a href="https://www.linkedin.com/in/dennissosa17"><img src="Icons/linkedin-logo.png" alt="linkedin-icon" height="32" width="42"></a>
-        <a href="https://www.github.com/dsosa17"><img src="Icons/github-logo.png" alt="github-icon" height="32" width="32"></a>
-        <p style="font-size: 10px;">Website created by Dennis Sosa</p><br>
+    <div class="ui inverted four item top attached menu">
+      <div class="header item">
+        DGS
       </div>
-    </footer>
-
+      <a class="active item" href="#aboutMe">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item">
+        <i class="file alternate icon"></i>
+        Resume
+      </a>
+      <div class="ui simple dropdown item">
+        Contact
+        <i class="dropdown icon"></i>
+        <div class="ui inverted menu">
+          <a class="item" href="mailto:dennis.sosa@gatech.edu">
+            <i class="envelope outline icon"></i>
+            Georgia Tech
+          </a>
+          <a class="item" href="mailto:dsosa1795@gmail.com">
+            <i class="envelope outline icon"></i>
+            Gmail
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="ui inverted attached segment">
+      <h2 class="ui center aligned icon header">
+        <img class="ui circular icon" src="Icons/Sosa-Dennis.jpg" alt="Dennis Sosa" style="border-radius: 50%; width: 220px; height: 200px;">
+      </h2>
+      <div style="text-align:center;">
+        <h2>
+          Dennis Sosa
+        </h2>
+        <i style="font-size:12px;text-align: center;">MS Computer Science, Georgia Institute of Technology</i>
+        <br>
+        <i style="font-size:12px;text-align: center;">Specializations: Artificial Intelligence, Machine Learning</i>
+      </div>
+    </div>
+    <div class="ui attached segment">
+      <div id="aboutMe" class="ui header">
+        About Me
+      </div>
+      <p>
+        Hi, my name is Dennis German Sosa (DGS). Welcome to my website. I am a first-year graduate student at Georgia Institute of Technology pursuing a Master of Science in Computer Science. Throughout my student career, I have developed a high interest in software engineering, artificial intelligence, machine learning, and infrastructure. I plan to complete a research project within one of these areas. On my free time, I like to watch and play soccer. <br><br>As I proceed with my student career, I hope to develop professionally and technologically to take my skills to the software engineering industry. I value the importance of teamwork. As I look forward to my future career, I hope to join a team where software engineers can work together to solve problems that will impact many lives. <br><br>Please feel free to contact me if you have any questions. <br>The website is currently under construction for additional content. <br><br>Thank you for visiting my website.
+      </p>
+    </div>
+    <div class="ui center aligned inverted bottom attached segment">
+      <h4>Connect with Dennis</h4>
+      <a class="item" href="https://www.linkedin.com/in/dennissosa17/" target="_blank"><i class="big linkedin link icon"></i></a>
+      <a class="item" href="https://www.github.com/dsosa17" target="_blank"><i class="big github square link icon"></i></a>
+      <br>
+    </div>
   </body>
 </html>
