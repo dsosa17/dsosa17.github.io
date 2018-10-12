@@ -56,6 +56,11 @@
     		}
     	}
     </script>
+    <script>
+      function resumeMessage(){
+          window.alert("Please email Dennis to ask for a copy of his Resume using the 'Contact' tab to the right of this tab.\n\nPlease feel free to visit Dennis' LinkedIn Profile using the LinkedIn icon at the footer of the page.\n\nThank you.")
+      }
+    </script>
   </head>
   <body>
     <div class="ui inverted four item top attached menu">
@@ -66,7 +71,7 @@
         <i class="home icon"></i>
         Home
       </a>
-      <a class="item" href="doc/Sosa-Dennis-Resume.pdf" target="_blank">
+      <a class="item" href="javascript:void(0)" onclick="resumeMessage();">
         <i class="file alternate icon"></i>
         Resume
       </a>
