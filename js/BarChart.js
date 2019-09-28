@@ -11,7 +11,7 @@ function drawHelper (data, x, xAxis, y, yAxis, svg, margin, height, width, tip) 
   let title = "Proficiency vs. Skills";
 
   x.domain(data.map(function(d) { return d[xKey]; }));
-  y.domain([0, d3.max(data, function(d) { return d[yKey]; })]);
+  y.domain([0, 100]);
 
   svg.append("g")
       .attr("class", "xAxis")
@@ -50,7 +50,7 @@ function drawHelper (data, x, xAxis, y, yAxis, svg, margin, height, width, tip) 
     .attr("dy", "0.9em")
     .style("text-anchor", "middle")
     .style("fill", "white")
-    .text(yKey);
+    .text(yKey+" (%)");
 
   svg.selectAll(".bar")
       .data(data)
@@ -69,7 +69,7 @@ function drawHelper (data, x, xAxis, y, yAxis, svg, margin, height, width, tip) 
           .style("opacity", 0.9);
 
         tip
-          .html("<strong>"+yKey+":</strong> <span style='color:#ff073a'>" + d[yKey] + "</span>")
+          .html("<strong>"+yKey+":</strong> <span style='color:#ff073a'>" + d[yKey] + "%</span>")
           .style("left", d3.event.pageX + "px")
           .style("top", d3.event.pageY - 1000 + "px");
       })
