@@ -26,11 +26,11 @@ footer{
 }
 
 .barCol {
-  fill: #ffff00;
+  fill: gray;
 }
 
 .barCol:hover {
-  fill: #ff073a;
+  fill: white;
 }
 
 text, path, .tick {
