@@ -1,0 +1,51 @@
+#center-pane{
+  border-radius: 25px;
+  font-family: "Verdana", sans-serif, serif;
+  background-color: #E6E9EA; 
+  background-size: 100%;
+  padding: 20px;
+  margin: 10px;
+}
+
+footer{
+  background-color:#3D3D42;
+  color:#FFFFFF;
+  font-family: "Verdana", sans-serif, serif;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+}
+
+#icon-link {
+  color: white;
+}
+
+#icon-link:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+.barCol {
+  fill: gray;
+}
+
+.barCol:hover {
+  fill: white;
+}
+
+text, path, .tick {
+  color: white;
+}
+
+.tooltip {
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 75px;
+  height: 41px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: rgba(0,0,0,.8);
+  border: 2px solid black;
+  pointer-events: none;
+}
